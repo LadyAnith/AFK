@@ -2,9 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Menu from './components/navegacion/navbar';
-import ListVAscensionComponent from './components/ListVAscensionComponent';
-import ListVAscensionUpgradingComponent from './components/ListVAscensionUpgradingComponent';
-
+import Home from './components/pages/Home';
+import Ascension from './components/pages/Ascension';
+import AscensionUpgrading from './components/pages/AscensionUpgrading';
 
 function App() {
   return (
@@ -12,7 +12,11 @@ function App() {
       <Router>
         <Menu />
         <Routes>
-          <Route path='/ListVAscension' exact component={<ListVAscensionComponent/>}/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/ascension' element={<Ascension/>}/>
+          <Route path='/ascensionUpgrading' element={<AscensionUpgrading/>}/>
+{/*
+*/}
         </Routes>
       </Router>
 

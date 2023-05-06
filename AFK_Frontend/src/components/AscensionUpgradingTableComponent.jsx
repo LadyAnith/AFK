@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import VAscensionService from '../services/VAscensionService';
+import { Component } from 'react';
+import VAscensionUpgradingService from '../services/VAscensionUpgradingService';
 //import logo from '../asset/heroes/A.Baden.jpg';
 
-class ListVAscensionComponent extends Component {
+class AscensionUpgradingTableComponent extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -12,7 +12,7 @@ class ListVAscensionComponent extends Component {
     }
 
     componentDidMount() {
-        VAscensionService.getVAscensions().then((res) => {
+        VAscensionUpgradingService.getVAscensions().then((res) => {
             this.setState({ vascensions: res.data });
         });
     }
@@ -25,13 +25,12 @@ class ListVAscensionComponent extends Component {
                                 <img src={logo}></img>
                             */}
                 <div className="row offset-md-2 col-7">
-                    <h2 className="text-center">VAscension List</h2>
+                    <h2 className="text-center">Ascension List</h2>
                     <div className="table table-striped tables-bordered">
                         <thead>
                             <tr>
                                 <th>Avatar</th>
                                 <th>Name</th>
-                                <th>Upgrading</th>
                                 <th>Type</th>
                                 <th>Faction</th>
                                 <th>Ascension</th>
@@ -45,7 +44,6 @@ class ListVAscensionComponent extends Component {
                                         <tr key={vascension.id}>
                                             <td><img src={process.env.PUBLIC_URL + '/asset/heroes/' + vascension.avatar}></img></td>
                                             <td>{vascension.name}</td>
-                                            <td>{vascension.upgrading}</td>
                                             <td>{vascension.type}</td>
                                             <td>{vascension.faction}</td>
                                             <td>{vascension.ascension}</td>
@@ -61,4 +59,4 @@ class ListVAscensionComponent extends Component {
     }
 }
 
-export default ListVAscensionComponent;
+export default AscensionUpgradingTableComponent;

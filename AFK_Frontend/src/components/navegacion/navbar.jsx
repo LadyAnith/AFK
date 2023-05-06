@@ -5,7 +5,7 @@ const Menu = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img src='./afk.jpg' width='200'/>
+        <Link className="dropdown-item" to='/' ><img src='./afk.jpg' width='200' /></Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -16,8 +16,8 @@ const Menu = () => {
                 Ascension
               </a>
               <div className="dropdown-menu" aria-labelledby="navAscension">
-                <Link className="dropdown-item" to='/ListVAscension' >VAscension</Link>
-                <Link className="dropdown-item" to='/ListVAscensionUpgrading' >VAscension Upgrading</Link>
+                <Link className="dropdown-item" to='/Ascension' >Ascension</Link>
+                <Link className="dropdown-item" to='/AscensionUpgrading' >Ascension Upgrading</Link>
               </div>
             </li>
             <li className="nav-item dropdown">
@@ -25,8 +25,8 @@ const Menu = () => {
                 Crystal
               </a>
               <div className="dropdown-menu" aria-labelledby="navCrystal">
-                <Link className="dropdown-item" to='/ListVCrystal' >VCrystal</Link>
-                <Link className="dropdown-item" to='/ListVCrystalUpgrading' >VCrystal Upgrading</Link>
+                <Link className="dropdown-item" to='/Crystal' >Crystal</Link>
+                <Link className="dropdown-item" to='/CrystalUpgrading' >Crystal Upgrading</Link>
               </div>
             </li>
             <li className="nav-item dropdown">
@@ -34,8 +34,8 @@ const Menu = () => {
                 Engraving
               </a>
               <div className="dropdown-menu" aria-labelledby="navEngraving">
-                <Link className="dropdown-item" to='/ListVEngraving' >VEngraving</Link>
-                <Link className="dropdown-item" to='/ListVEngravingUpgrading' >VEngraving Upgrading</Link>
+                <Link className="dropdown-item" to='/Engraving' >Engraving</Link>
+                <Link className="dropdown-item" to='/EngravingUpgrading' >Engraving Upgrading</Link>
               </div>
             </li>
             <li className="nav-item dropdown">
@@ -43,8 +43,8 @@ const Menu = () => {
                 Furniture
               </a>
               <div className="dropdown-menu" aria-labelledby="navFurniture">
-                <Link className="dropdown-item" to='/ListVFurniture' >VFurniture</Link>
-                <Link className="dropdown-item" to='/ListVFurnitureUpgrading' >VFurniture Upgrading</Link>
+                <Link className="dropdown-item" to='/Furniture' >Furniture</Link>
+                <Link className="dropdown-item" to='/FurnitureUpgrading' >Furniture Upgrading</Link>
               </div>
             </li>
             <li className="nav-item dropdown">
@@ -52,8 +52,8 @@ const Menu = () => {
                 Gears
               </a>
               <div className="dropdown-menu" aria-labelledby="navGears">
-                <Link className="dropdown-item" to='/ListVGears' >VGears</Link>
-                <Link className="dropdown-item" to='/ListVGearsUpgrading' >VGears Upgrading</Link>
+                <Link className="dropdown-item" to='/Gears' >Gears</Link>
+                <Link className="dropdown-item" to='/GearsUpgrading' >Gears Upgrading</Link>
               </div>
             </li>
             <li className="nav-item dropdown">
@@ -61,8 +61,8 @@ const Menu = () => {
                 Signature
               </a>
               <div className="dropdown-menu" aria-labelledby="navSignature">
-                <Link className="dropdown-item" to='/ListVSignature' >VSignature</Link>
-                <Link className="dropdown-item" to='/ListVSignatureUpgrading' >VSignature Upgrading</Link>
+                <Link className="dropdown-item" to='/Signature' >Signature</Link>
+                <Link className="dropdown-item" to='/SignatureUpgrading' >Signature Upgrading</Link>
               </div>
             </li>
           </ul>
